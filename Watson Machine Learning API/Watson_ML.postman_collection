@@ -1,0 +1,547 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Watson ML APIs",
+		"_postman_id": "3e2bffb7-a2c1-c5d9-b283-bb35699ba94f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Watson ML GET Token",
+			"request": {
+				"url": "https://ibm-watson-ml.mybluemix.net/v3/identity/token",
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic OWJhN2NmNzQtOTY4ZC00N2MyLTg3MzEtZGY3ODcwMjhmZjdjOjA2M2E5NmUxLWIzOTYtNDE4OC05ZTNkLTU4MmE4ZDZlZTIxZA==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "79afcf51-fccc-4530-9b1e-1e02864fe272",
+					"name": "Watson ML Get Token",
+					"originalRequest": {
+						"url": "https://ibm-watson-ml.mybluemix.net/v3/identity/token",
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"description": "",
+								"warning": "",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"name": "Authorization",
+								"value": "Basic OWJhN2NmNzQtOTY4ZC00N2MyLTg3MzEtZGY3ODcwMjhmZjdjOjA2M2E5NmUxLWIzOTYtNDE4OC05ZTNkLTU4MmE4ZDZlZTIxZA==",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "private, no-cache, no-store, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 18 Aug 2017 19:32:17 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "nginx/1.11.5",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-backside-transport",
+							"key": "x-backside-transport",
+							"value": "OK OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-frame-options",
+							"key": "x-frame-options",
+							"value": "DENY",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "x-global-transaction-id",
+							"key": "x-global-transaction-id",
+							"value": "592739249",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-xss-protection",
+							"key": "x-xss-protection",
+							"value": "1",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"responseTime": 78,
+					"body": "{\"token\":\"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjUyN2VhNmUyLTJlZmMtNGUwOC04YmQ0LTBkYTNiOTQ0MmZhMyIsImluc3RhbmNlSWQiOiI1MjdlYTZlMi0yZWZjLTRlMDgtOGJkNC0wZGEzYjk0NDJmYTMiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjliYTdjZjc0LTk2OGQtNDdjMi04NzMxLWRmNzg3MDI4ZmY3YyIsImlzcyI6Imh0dHA6Ly8xMjkuNDEuMjI5LjE4ODo4MDgwL3YyL2lkZW50aXR5IiwiaWF0IjoxNTAzMDg0NzM3LCJleHAiOjE1MDMxMTM1Mzd9.kPolIGvOghvMNX3wkKxSKhwJW8cQyzlDAfZzxgoaX0ecX08i1sz-zOqv3lVT7-7iT0_9mQ9ryZN-ogIKfjM74dKCMalquS8UETMvwMqPdIvC476T8P2Qp97KQGUpYvFtBCfFbX7thJbN1yJ-InFbM4lKCCGwiz7SrNyqkD_9VXpeBb5e4RxrRK7neOwyVbtesqIlnt07Mvj8_0vBhlfPO56OoBcQbRXt9WrUUrnbCaSpDqxRXn2VazSJKp09nMJs_lCdHuqQ1iAtb5FdnFocb7JJ7TXPXQ5QBSII5gX0Z9X7OGAyA8Lets0RWm34bTd40l2I9uQQQ3tjOs8I7q1llA\"}"
+				}
+			]
+		},
+		{
+			"name": "Watson ML GET Deployments",
+			"request": {
+				"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/deployments",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "efd807c6-7b9f-47bf-98ac-d6dea2b9d4b8",
+					"name": "Watson ML GET Deployments",
+					"originalRequest": {
+						"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/deployments",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 18 Aug 2017 19:29:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "nginx/1.11.5",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-backside-transport",
+							"key": "x-backside-transport",
+							"value": "OK OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-global-transaction-id",
+							"key": "x-global-transaction-id",
+							"value": "3513376797",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-xss-protection",
+							"key": "x-xss-protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"responseTime": 471,
+					"body": "{\"count\":1,\"resources\":[{\"metadata\":{\"guid\":\"f383a97c-f53f-465e-8c4a-9d08b8a1780d\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/f383a97c-f53f-465e-8c4a-9d08b8a1780d\",\"created_at\":\"2017-08-18T14:30:23.432Z\",\"modified_at\":\"2017-08-18T14:30:26.510Z\"},\"entity\":{\"runtime_environment\":\"spark-2.0\",\"name\":\"Heart Failure Prediction Model Deployment\",\"scoring_url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/f383a97c-f53f-465e-8c4a-9d08b8a1780d/online\",\"published_model\":{\"author\":{},\"name\":\"Heart Failure Prediction Model\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709\",\"guid\":\"9f62ea37-9c5a-4666-8e42-58c160985709\",\"created_at\":\"2017-08-18T14:30:21.578Z\"},\"model_type\":\"sparkml-model-2.0\",\"status\":\"ACTIVE\",\"type\":\"online\",\"deployed_version\":{\"url\":\"https://ibm-watson-ml.mybluemix.net/v2/artifacts/models/9f62ea37-9c5a-4666-8e42-58c160985709/versions/9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"guid\":\"9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"created_at\":\"2017-08-18T14:28:54.083Z\"}}}]}"
+				}
+			]
+		},
+		{
+			"name": "Watson ML POST Prediction",
+			"request": {
+				"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/published_models/{{model_id}}/deployments/{{deployment_id}}/online",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fields\":[\"AVGHEARTBEATSPERMIN\",\"PALPITATIONSPERDAY\",\"CHOLESTEROL\",\"BMI\",\"AGE\",\"SEX\",\"FAMILYHISTORY\",\"SMOKERLAST5YRS\",\"EXERCISEMINPERWEEK\"],\"values\":[[100,85,242,24,44,\"F\",\"Y\",\"Y\",125]]}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Watson ML GET Deployment Details",
+			"request": {
+				"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/published_models/{{model_id}}/deployments/{{deployment_id}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"input\":{\"fields\":[\"AVGHEARTBEATSPERMIN\",\"PALPITATIONSPERDAY\",\"CHOLESTEROL\",\"BMI\",\"AGE\",\"SEX\",\"FAMILYHISTORY\",\"SMOKERLAST5YRS\",\"EXERCISEMINPERWEEK\"],\"values\":[[100,85,242,24,44,\"F\",\"Y\",\"Y\",125]]}}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "c56a1e10-0729-4742-9f17-c88b18d3ad7a",
+					"name": "Watson ML Get Deployment Details",
+					"originalRequest": {
+						"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/published_models/{{model_id}}/deployments/{{deployment_id}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": "",
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"input\":{\"fields\":[\"AVGHEARTBEATSPERMIN\",\"PALPITATIONSPERDAY\",\"CHOLESTEROL\",\"BMI\",\"AGE\",\"SEX\",\"FAMILYHISTORY\",\"SMOKERLAST5YRS\",\"EXERCISEMINPERWEEK\"],\"values\":[[100,85,242,24,44,\"F\",\"Y\",\"Y\",125]]}}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 18 Aug 2017 19:32:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "nginx/1.11.5",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-backside-transport",
+							"key": "x-backside-transport",
+							"value": "OK OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-global-transaction-id",
+							"key": "x-global-transaction-id",
+							"value": "592733521",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-xss-protection",
+							"key": "x-xss-protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1215,
+					"body": "{\"metadata\":{\"guid\":\"f383a97c-f53f-465e-8c4a-9d08b8a1780d\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/f383a97c-f53f-465e-8c4a-9d08b8a1780d\",\"created_at\":\"2017-08-18T14:30:23.432Z\",\"modified_at\":\"2017-08-18T14:30:26.510Z\"},\"entity\":{\"runtime_environment\":\"spark-2.0\",\"name\":\"Heart Failure Prediction Model Deployment\",\"scoring_url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/f383a97c-f53f-465e-8c4a-9d08b8a1780d/online\",\"published_model\":{\"author\":{},\"name\":\"Heart Failure Prediction Model\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709\",\"guid\":\"9f62ea37-9c5a-4666-8e42-58c160985709\",\"created_at\":\"2017-08-18T14:30:21.578Z\"},\"model_type\":\"sparkml-model-2.0\",\"status\":\"ACTIVE\",\"type\":\"online\",\"deployed_version\":{\"url\":\"https://ibm-watson-ml.mybluemix.net/v2/artifacts/models/9f62ea37-9c5a-4666-8e42-58c160985709/versions/9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"guid\":\"9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"created_at\":\"2017-08-18T14:28:54.083Z\"}}}"
+				}
+			]
+		},
+		{
+			"name": "Watson ML POST create deployment",
+			"request": {
+				"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/published_models/{{model_id}}/deployments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Heart Failure Prediction Model Deployment 2\", \"description\": \"First deployment of Heart Failure Prediction Model\", \"type\": \"online\"}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "8a81a28c-30df-4b4c-bcf8-81db21c34fdf",
+					"name": "Watson ML Create Deployment",
+					"originalRequest": {
+						"url": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/{{instance_id}}/published_models/{{model_id}}/deployments",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": "",
+								"warning": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Heart Failure Prediction Model Deployment 2\", \"description\": \"First deployment of Heart Failure Prediction Model\", \"type\": \"online\"}"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 18 Aug 2017 20:07:54 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/4b9a75b0-0c68-4963-90c3-e32df266f2d5",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "nginx/1.11.5",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-backside-transport",
+							"key": "x-backside-transport",
+							"value": "OK OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-client-ip",
+							"key": "x-client-ip",
+							"value": "72.48.210.209",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-global-transaction-id",
+							"key": "x-global-transaction-id",
+							"value": "3658530893",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-vcap-request-id",
+							"key": "x-vcap-request-id",
+							"value": "d66c9c2c-d013-42d4-4a61-3a48c456b8b4",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-xss-protection",
+							"key": "x-xss-protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"responseTime": 3333,
+					"body": "{\"metadata\":{\"guid\":\"4b9a75b0-0c68-4963-90c3-e32df266f2d5\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/4b9a75b0-0c68-4963-90c3-e32df266f2d5\",\"created_at\":\"2017-08-18T20:07:51.744Z\",\"modified_at\":\"2017-08-18T20:07:54.555Z\"},\"entity\":{\"runtime_environment\":\"spark-2.0\",\"name\":\"Heart Failure Prediction Model Deployment 2\",\"scoring_url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709/deployments/4b9a75b0-0c68-4963-90c3-e32df266f2d5/online\",\"description\":\"First deployment of Heart Failure Prediction Model\",\"published_model\":{\"author\":{},\"name\":\"Heart Failure Prediction Model\",\"url\":\"https://ibm-watson-ml.mybluemix.net/v3/wml_instances/527ea6e2-2efc-4e08-8bd4-0da3b9442fa3/published_models/9f62ea37-9c5a-4666-8e42-58c160985709\",\"guid\":\"9f62ea37-9c5a-4666-8e42-58c160985709\",\"created_at\":\"2017-08-18T14:30:21.578Z\"},\"model_type\":\"sparkml-model-2.0\",\"status\":\"INITIALIZING\",\"type\":\"online\",\"deployed_version\":{\"url\":\"https://ibm-watson-ml.mybluemix.net/v2/artifacts/models/9f62ea37-9c5a-4666-8e42-58c160985709/versions/9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"guid\":\"9602bd2a-6d7c-4d15-ae7b-8cdf294f5410\",\"created_at\":\"2017-08-18T14:28:54.083Z\"}}}"
+				}
+			]
+		}
+	]
+}

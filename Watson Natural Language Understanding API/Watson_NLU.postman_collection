@@ -1,0 +1,113 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Watson NLU",
+		"_postman_id": "2555bd6a-03aa-f67e-7517-ea95e896a64d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET NLU on URL",
+			"request": {
+				"url": {
+					"raw": "https://watson-api-explorer.mybluemix.net/natural-language-understanding/api/v1/analyze?version=2017-02-27&url=www.ibm.com&features=concepts,entities,keywords,categories,emotion,sentiment,metadata,relations,semantic_roles",
+					"protocol": "https",
+					"host": [
+						"watson-api-explorer",
+						"mybluemix",
+						"net"
+					],
+					"path": [
+						"natural-language-understanding",
+						"api",
+						"v1",
+						"analyze"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "2017-02-27",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "url",
+							"value": "www.ibm.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "features",
+							"value": "concepts,entities,keywords,categories,emotion,sentiment,metadata,relations,semantic_roles",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic NzZlMzBiZDYtNmRhNC00ZjU0LWE3YWUtMzNlNTgzYjAyMjQ3OllaWTJpckNHaGhuUA==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Models",
+			"request": {
+				"url": {
+					"raw": "https://watson-api-explorer.mybluemix.net/natural-language-understanding/api/v1/models?version=2017-02-27",
+					"protocol": "https",
+					"host": [
+						"watson-api-explorer",
+						"mybluemix",
+						"net"
+					],
+					"path": [
+						"natural-language-understanding",
+						"api",
+						"v1",
+						"models"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "2017-02-27",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic NzZlMzBiZDYtNmRhNC00ZjU0LWE3YWUtMzNlNTgzYjAyMjQ3OllaWTJpckNHaGhuUA==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
